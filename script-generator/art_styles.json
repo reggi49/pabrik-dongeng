@@ -1,0 +1,604 @@
+{
+  "art_styles_database": [
+    {
+      "id": "style_001",
+      "name": "Vibrant Modern 2D Vector",
+      "tags": ["moral", "fabel", "hewan", "ceria", "modern"],
+      "core_tokens": "Cute modern 2D vector illustration style, children's book aesthetic, bold vibrant candy colors, clean lines, flat shading with magical glowing accents, rounded expressive shapes, inspired by Bluey."
+    },
+    {
+      "id": "style_002",
+      "name": "Whimsical Pastel Gouache",
+      "tags": ["kerajaan", "putri", "magis", "peri", "klasik"],
+      "core_tokens": "Whimsical pastel gouache illustration style, classic children's book aesthetic, soft luminous pastel colors, Mary Blair inspiration, painterly brushstrokes, textured paper look."
+    },
+    {
+      "id": "style_003",
+      "name": "Mystical Bioluminescent Lofi",
+      "tags": ["mistis", "hantu", "sungai", "malam", "hutan"],
+      "core_tokens": "Mystical bioluminescent lofi 2D animation style, soft clean linework, vibrant rich colors, deep twilight purple and river teal palette, glowing neon particle effects, cozy but magical mood."
+    },
+    {
+      "id": "style_004",
+      "name": "3D Claymation Stop-Motion",
+      "tags": ["rakyat", "pahlawan", "komedi", "fabel", "legenda"],
+      "core_tokens": "3D Clay animation style, hand-sculpted look, detailed textures with subtle fingerprint-visible clay surfaces, warm soft sunlight, tactile stop-motion aesthetic with miniature realism."
+    },
+    {
+      "id": "style_005",
+      "name": "Trendy 2.5D Cel-Shaded",
+      "tags": ["aksi", "raksasa", "kutukan", "pahlawan", "petualangan"],
+      "core_tokens": "Trendy 2.5D stylized animation, sharp ink outlines, cel-shaded accents, painterly rendering texture, dynamic dramatic composition, Spider-Verse or Arcane style aesthetic."
+    },
+    {
+      "id": "style_006",
+      "name": "Studio Ghibli Watercolor",
+      "tags": ["alam", "petualangan", "pedesaan", "tenang", "emosional"],
+      "core_tokens": "Studio Ghibli-inspired watercolor illustration style, lush painterly nature backgrounds, soft diffused sunlight, rich botanical detail, warm storybook palette, hand-painted texture on every surface."
+    },
+    {
+      "id": "style_007",
+      "name": "Chibi Kawaii Anime",
+      "tags": ["ceria", "lucu", "hewan", "sihir", "balita"],
+      "core_tokens": "Super cute Chibi Kawaii anime style, oversized expressive eyes, soft pastel color scheme, sparkling magic stars, bold clean outline, simple minimalistic backgrounds, adorable proportions."
+    },
+    {
+      "id": "style_008",
+      "name": "Vintage Golden Age Storybook",
+      "tags": ["klasik", "kerajaan", "legenda", "sejarah", "serius"],
+      "core_tokens": "Vintage 19th-century children's book illustration, cross-hatching ink textures, muted sepia and jewel tones, Arthur Rackham inspiration, highly detailed engraved line art, antique aesthetic."
+    },
+    {
+      "id": "style_009",
+      "name": "Cyberpunk Neon Glow",
+      "tags": ["modern", "masa-depan", "aksi", "malam", "kota"],
+      "core_tokens": "Futuristic cyberpunk 2D vector art, neon pink and cyan glow, dark moody backgrounds, holographic elements, sharp geometric shapes, high contrast digital vector shader."
+    },
+    {
+      "id": "style_010",
+      "name": "Magical Layered Papercut",
+      "tags": ["magis", "dongeng", "misteri", "laut", "hutan"],
+      "core_tokens": "Magical layered papercut 2D style, paper shadowbox effect, 3D depth layers, rich luminous gradients, layered cardstock textures, crisp laser-cut edges, whimsical shadow play."
+    },
+    {
+      "id": "style_011",
+      "name": "Retro 1930s Rubber Hose",
+      "tags": ["komedi", "lucu", "klasik", "hitam-putih", "fabel"],
+      "core_tokens": "1930s rubber hose cartoon style, pie-cut eyes, monochromatic black and white, subtle film grain and scratches, flexible noodle limbs, vintage Max Fleischer aesthetic."
+    },
+    {
+      "id": "style_012",
+      "name": "Nordic Folk Art Illustration",
+      "tags": ["hewan", "alam", "sederhana", "moral", "klasik"],
+      "core_tokens": "Scandinavian Nordic folk art style, symmetric floral patterns, flat bold colors, whimsical stylized animals, decorative borders, matte texture, rustic simplistic charm."
+    },
+    {
+      "id": "style_013",
+      "name": "Isometric 3D Voxel",
+      "tags": ["modern", "game", "ceria", "kota", "sederhana"],
+      "core_tokens": "Cute isometric 3D voxel art style, Crossy Road aesthetic, cubic blocky characters, bright daylight, clean grid setup, miniature low-poly digital diorama."
+    },
+    {
+      "id": "style_014",
+      "name": "Dark Romantic Gothic Batik",
+      "tags": ["mistis", "legenda", "kerajaan", "seram", "daerah"],
+      "core_tokens": "Dark Romantic Batik Fantasy style, Caravaggio-inspired chiaroscuro lighting, subtle Indonesian traditional fabric motifs, rich jewel tones, moody shadows, painterly texture."
+    },
+    {
+      "id": "style_015",
+      "name": "Psychedelic Pop Art",
+      "tags": ["ceria", "modern", "lucu", "sihir", "fantasi"],
+      "core_tokens": "1960s psychedelic pop art style, trippy neon melting patterns, high contrast halftone dots, flat saturated colors, surreal whimsical character designs, bold black contours."
+    },
+    {
+      "id": "style_016",
+      "name": "Minimalist Scandinavian Line Art",
+      "tags": ["sederhana", "tenang", "moral", "alam", "modern"],
+      "core_tokens": "Minimalist line drawing aesthetic, soft neutral earthy tones, continuous line execution, abstract organic geometry, plenty of negative space, elegant poetic simplification."
+    },
+    {
+      "id": "style_017",
+      "name": "Cottagecore Acrylic Impasto",
+      "tags": ["alam", "pedesaan", "tenang", "hewan", "klasik"],
+      "core_tokens": "Cozy cottagecore impasto acrylic painting style, thick textured brushstrokes, palette knife details, warm rustic colors, dreamy wildflower fields, tangible canvas fabric look."
+    },
+    {
+      "id": "style_018",
+      "name": "Ukiyo-e Traditional Woodblock",
+      "tags": ["legenda", "laut", "sejarah", "daerah", "mistis"],
+      "core_tokens": "Traditional Japanese Ukiyo-e woodblock print style, flat stylized waves, dynamic line contours, antique dynamic expressions, parchment paper canvas texture, classic Asian art aesthetic."
+    },
+    {
+      "id": "style_019",
+      "name": "Cosmically Radiant Fantasy",
+      "tags": ["magis", "sihir", "langit", "bintang", "peri"],
+      "core_tokens": "Cosmic fantasy illustration, galaxy dust nebula lighting, deep indigo and starlight gold accents, glowing crystalline structures, majestic magical atmosphere."
+    },
+    {
+      "id": "style_020",
+      "name": "Cute Chalk Pastel Diorama",
+      "tags": ["balita", "lucu", "ceria", "sederhana", "moral"],
+      "core_tokens": "Soft chalk pastel drawing style, smudge crayon texture, chalky dreamlike appearance, childish naive sketches, sweet pastel hues, warm and gentle bedroom lighting."
+    },
+    {
+      "id": "style_021",
+      "name": "Flat Corporate Memphis",
+      "tags": ["modern", "sederhana", "kota", "moral", "ceria"],
+      "core_tokens": "Modern Memphis flat design style, playful disproportionate characters, solid primary colors, abstract confetti patterns, clean vector flat background layout."
+    },
+    {
+      "id": "style_022",
+      "name": "Ancient Mythological Fresco",
+      "tags": ["legenda", "sejarah", "raksasa", "pahlawan", "klasik"],
+      "core_tokens": "Ancient mythological fresco mural painting style, weathered plaster texture, cracked paint details, earth tones, classical epic positions, historic archaeological aesthetic."
+    },
+    {
+      "id": "style_023",
+      "name": "Cute 3D Felted Wool Plushie",
+      "tags": ["lucu", "hewan", "balita", "ceria", "tenang"],
+      "core_tokens": "Adorable needle-felted wool style, soft fuzzy textures, fiber craft detail, tiny plastic bead eyes, cozy warm overhead soft lighting, stop-motion puppet texture."
+    },
+    {
+      "id": "style_024",
+      "name": "Art Nouveau Organic Elegance",
+      "tags": ["putri", "peri", "magis", "kerajaan", "alam"],
+      "core_tokens": "Alphonse Mucha-inspired Art Nouveau style, flowing whiplash lines, elegant mosaic hair textures, ornate gold leaf decorative frames, soft pastel tones, high decoration."
+    },
+    {
+      "id": "style_025",
+      "name": "Grimms Fairy Tale Charcoal",
+      "tags": ["seram", "misteri", "hutan", "kutukan", "malam"],
+      "core_tokens": "Dark moody charcoal sketch style, heavy smudging texture, high contrast chiaroscuro noir shadows, mysterious deep forest settings, monochromatic eerie classic fairytale vibe."
+    },
+    {
+      "id": "style_026",
+      "name": "Kawaii Food Pop Art",
+      "tags": ["lucu", "ceria", "modern", "balita", "fabel"],
+      "core_tokens": "Super cute anthropomorphic food item illustrations, shiny gel texture, glossy highlights, candy colors, bright smiles, bold sticker-style black vector boundaries."
+    },
+    {
+      "id": "style_027",
+      "name": "Art Deco Geometric Luxury",
+      "tags": ["kerajaan", "kota", "modern", "sejarah", "serius"],
+      "core_tokens": "1920s Art Deco luxury style, sharp symmetrical geometry, metallic gold patterns, sleek stylized figures, deep rich black and brass color contrast, cinematic roaring twenties look."
+    },
+    {
+      "id": "style_028",
+      "name": "Stained Glass Cathedral",
+      "tags": ["magis", "sihir", "kerajaan", "legenda", "bintang"],
+      "core_tokens": "Intricate stained glass window art style, translucent mosaic fragments, glowing back-lit kaleidoscope lighting, thick dark lead outlines, vibrant jewel hues casting colored shadows."
+    },
+    {
+      "id": "style_029",
+      "name": "French Impressionist Oil",
+      "tags": ["alam", "tenang", "pedesaan", "petualangan", "klasik"],
+      "core_tokens": "Claude Monet-inspired French Impressionism oil painting, dabs of light, atmospheric open-air brushstrokes, pastel sunset color glow, dreamlike scenery blending softly."
+    },
+    {
+      "id": "style_030",
+      "name": "Cute Cartoon Sticker Sheet",
+      "tags": ["lucu", "ceria", "hewan", "balita", "sederhana"],
+      "core_tokens": "Playful die-cut cartoon sticker aesthetic, thick clean white borders around characters, solid popping backgrounds, drop shadow effects, vibrant cheerful design language."
+    },
+    {
+      "id": "style_031",
+      "name": "Watercolor Ink Wash (Sumi-e)",
+      "tags": ["tenang", "alam", "sungai", "misteri", "klasik"],
+      "core_tokens": "Traditional East Asian ink wash painting style, elegant minimalist brush technique, gradient gray ink sweeps, raw watercolor paper fibers, quiet spiritual nature depiction."
+    },
+    {
+      "id": "style_032",
+      "name": "Futuristic Hologram Grid",
+      "tags": ["masa-depan", "modern", "sihir", "magis", "kota"],
+      "core_tokens": "Digital sci-fi hologram presentation style, glowing blue scan lines, wireframe vector grids, flickering glitch aesthetic, transparent particles floating in dark space."
+    },
+    {
+      "id": "style_033",
+      "name": "Traditional Balinese Kamasan Paint",
+      "tags": ["daerah", "legenda", "rakyat", "pahlawan", "sejarah"],
+      "core_tokens": "Traditional Balinese Kamasan puppet painting style, epic Wayang profiles, rustic ochre and natural pigment tones, dense traditional flame borders, ancient authentic look."
+    },
+    {
+      "id": "style_034",
+      "name": "Lego Block Brick Diorama",
+      "tags": ["lucu", "komedi", "modern", "game", "ceria"],
+      "core_tokens": "Cute plastic toy brick building style, miniature Lego world setup, glossy plastic surfaces, tiny circular studs, hard edge toy shadows, cheerful toy movie animation look."
+    },
+    {
+      "id": "style_035",
+      "name": "Whimsical Ink Pen Dotwork",
+      "tags": ["misteri", "hutan", "fabel", "hewan", "klasik"],
+      "core_tokens": "Detailed stippling and pointillism pen ink illustration, millions of tiny hand-drawn dots forming shapes, high detail texture, storybook monochromatic look with cream paper background."
+    },
+    {
+      "id": "style_036",
+      "name": "Vibrant Mexican Talavera folk",
+      "tags": ["ceria", "hewan", "moral", "fabel", "daerah"],
+      "core_tokens": "Mexican Talavera pottery pattern inspiration, cobalt blue and warm yellow details, rich floral flourishes, high gloss ceramic finish, festive sunny cultural atmosphere."
+    },
+    {
+      "id": "style_037",
+      "name": "Medieval Illumination Manuscript",
+      "tags": ["kerajaan", "sejarah", "klasik", "legenda", "putri"],
+      "core_tokens": "14th-century medieval manuscript illustration, flat gold leaf halo gilding, primitive medieval perspective, decorative floral text columns, antique crimson and indigo pigments."
+    },
+    {
+      "id": "style_038",
+      "name": "Abstract Cubist Expressionism",
+      "tags": ["aksi", "emosional", "raksasa", "dramatis", "modern"],
+      "core_tokens": "Picasso-inspired cubism style, deconstructed geometric multiple perspectives, bold fractured features, abstract high contrast colors, highly dramatic angular lines."
+    },
+    {
+      "id": "style_039",
+      "name": "Sweet Cotton Candy Dreams",
+      "tags": ["balita", "lucu", "ceria", "peri", "magis"],
+      "core_tokens": "Dreamy soft-focus fluffy render style, pastel pink and sky blue lighting, sugar puff clouds, iridescent shimmering glitter dust, ultra-cute fairy tale childhood aesthetic."
+    },
+    {
+      "id": "style_040",
+      "name": "Polynesian Tribal Woodcarving",
+      "tags": ["daerah", "pulau", "laut", "pahlawan", "legenda"],
+      "core_tokens": "Polynesian tribal tiki woodcarving style, rich chiseled mahogany textures, oceanic tattoo engravings, fiery torches casting dramatic fire lighting shadows, raw tribal strength."
+    },
+    {
+      "id": "style_041",
+      "name": "High-Fantasy Digital Matte Paint",
+      "tags": ["petualangan", "raksasa", "kerajaan", "aksi", "alam"],
+      "core_tokens": "Cinematic epic high-fantasy matte painting, vast majestic horizons, volumetric atmospheric rays, grand rendering, photorealistic layout with fairytale magical lighting elements."
+    },
+    {
+      "id": "style_042",
+      "name": "Cute Low-Poly Flat Shader",
+      "tags": ["game", "modern", "sederhana", "hewan", "ceria"],
+      "core_tokens": "Charming low-poly 3D render style, flat pastel texture gradients, distinct triangular faces, soft ambient occlusion shadows, minimal stylized indie game aesthetic."
+    },
+    {
+      "id": "style_043",
+      "name": "Traditional Javanese Wayang Beber",
+      "tags": ["daerah", "rakyat", "legenda", "sejarah", "mistis"],
+      "core_tokens": "Traditional Javanese Wayang Beber scroll painting style, elongated character profiles, natural dye hues, distressed tree-bark paper texturing, cultural storytelling aesthetic."
+    },
+    {
+      "id": "style_044",
+      "name": "1970s Retro Anime (Mecha/Fantasy)",
+      "tags": ["aksi", "klasik", "pahlawan", "petualangan", "masa-depan"],
+      "core_tokens": "1970s classic hand-drawn cell anime style, warm color saturation, painted background layers, retro lighting flares, vintage Osamu Tezuka or classic robot anime aesthetic."
+    },
+    {
+      "id": "style_045",
+      "name": "Luminous Alcohol Ink Art",
+      "tags": ["magis", "sihir", "peri", "laut", "tenang"],
+      "core_tokens": "Fluid alcohol ink flowing painting, translucent merging colors, metallic gold swirling veins, organic fluid shapes, ethereal dreamlike abstract storybook setting."
+    },
+    {
+      "id": "style_046",
+      "name": "Crayon Scratchboard Scratch art",
+      "tags": ["misteri", "malam", "ceria", "sihir", "balita"],
+      "core_tokens": "Rainbow crayon scratchboard art style, black overlay coating scraped off to reveal bright neon colors underneath, childlike magical glowing lines on pitch black darkness."
+    },
+    {
+      "id": "style_047",
+      "name": "Classic European Comic (Hergé)",
+      "tags": ["petualangan", "komedi", "moral", "sederhana", "modern"],
+      "core_tokens": "Tintin-inspired Ligne Claire (clear line) comic style, equal line weight, flat crisp coloring, realistic structured architectural backgrounds, clean straightforward graphic art."
+    },
+    {
+      "id": "style_048",
+      "name": "Surrealist Dali Dreamscape",
+      "tags": ["misteri", "magis", "dramatis", "malam", "fantasi"],
+      "core_tokens": "Salvador Dali-inspired surrealism style, melting clock objects, long dramatic sunset shadows, impossible gravity, bizarre majestic landscapes, highly dream-like psychological mood."
+    },
+    {
+      "id": "style_049",
+      "name": "Cute 2D Scratchy Sketchbook",
+      "tags": ["balita", "lucu", "sederhana", "moral", "hewan"],
+      "core_tokens": "Naively drawn colored pencil sketch style, messy scratchy filling lines, loose cute character contours, notebook paper background texture, heartwarming indie vibe."
+    },
+    {
+      "id": "style_050",
+      "name": "Ancient Egyptian Hieroglyphic",
+      "tags": ["sejarah", "legenda", "serius", "klasik", "daerah"],
+      "core_tokens": "Ancient Egyptian wall paint style, side profile flat perspective, strict historic posture grids, gold and turquoise mineral pigments, textured sand-crusted stone slabs."
+    },
+    {
+      "id": "style_051",
+      "name": "Gothic Victorian Pen & Ink",
+      "tags": ["seram", "misteri", "malam", "hutan", "kutukan"],
+      "core_tokens": "Edward Gorey-inspired gothic Victorian pen drawing, fine dark cross-hatching, ominous pale faces, gloomy elegant mansion interiors, antique eerie elegance."
+    },
+    {
+      "id": "style_052",
+      "name": "Cute 3D Squishy Vinyl Toy",
+      "tags": ["lucu", "ceria", "modern", "balita", "game"],
+      "core_tokens": "Trendy designer toy style, smooth glossy vinyl texture, cute rounded plastic proportions, studio backdrop illumination, soft neon aesthetic, pop culture collector item look."
+    },
+    {
+      "id": "style_053",
+      "name": "Baroque Chiaroscuro Oil Paint",
+      "tags": ["dramatis", "emosional", "pahlawan", "serius", "klasik"],
+      "core_tokens": "Rembrandt-inspired Baroque oil painting, extreme deep shadows contrasting strong single-source candlelight beams, highly emotional cinematic paint strokes, rich historical texture."
+    },
+    {
+      "id": "style_054",
+      "name": "Retro 1980s Synthwave Sunset",
+      "tags": ["modern", "masa-depan", "malam", "kota", "aksi"],
+      "core_tokens": "1980s synthwave vector background style, neon wireframe grid landscape, giant glowing magenta sun grids, low-poly chrome reflections, high energy digital neon palette."
+    },
+    {
+      "id": "style_055",
+      "name": "Enchanted Scratchy Linocut Print",
+      "tags": ["rakyat", "fabel", "hewan", "hutan", "klasik"],
+      "core_tokens": "Traditional hand-carved linocut print texture, blocky positive-negative spaces, heavy black paint stamp textures on fibrous cream handmade paper, rustic folklore design."
+    },
+    {
+      "id": "style_056",
+      "name": "Cute Chibi Felt Collage",
+      "tags": ["balita", "lucu", "sederhana", "ceria", "hewan"],
+      "core_tokens": "Whimsical felt fabric collage style, stitched fabric edges, layered colorful cloths, soft tactile fuzzy backgrounds, delightful handmade arts and crafts book look."
+    },
+    {
+      "id": "style_057",
+      "name": "Futuristic Bio-Organic Living Tech",
+      "tags": ["masa-depan", "sihir", "alam", "magis", "modern"],
+      "core_tokens": "Solarpunk aesthetic, organic architecture growing inside plants, glowing green neon root lines, white flowing curves, harmony between advanced technology and bright lush nature."
+    },
+    {
+      "id": "style_058",
+      "name": "Traditional Dayak Tattoo Art",
+      "tags": ["daerah", "pahlawan", "hutan", "legenda", "rakyat"],
+      "core_tokens": "Traditional Dayak tribal motifs design, heavy black swirling linework, hornbill bird abstractions, deep emerald and blood red crimson details, deep jungle mystical atmosphere."
+    },
+    {
+      "id": "style_059",
+      "name": "Whimsical Airbrush Air-baked Paint",
+      "tags": ["balita", "lucu", "tenang", "ceria", "peri"],
+      "core_tokens": "Soft 1980s airbrush children's illustration style, velvety seamless color blends, glowing smooth light spray effects, nostalgic soft fairytale feel."
+    },
+    {
+      "id": "style_060",
+      "name": "Prehistoric Cave Wall Painting",
+      "tags": ["sejarah", "hewan", "legenda", "rakyat", "sederhana"],
+      "core_tokens": "Primitive prehistoric cave drawing style, charcoal ash strokes, red ochre handprints, stylized running bison and animals, rugged raw mountain rock texturing."
+    },
+    {
+      "id": "style_061",
+      "name": "Watercolor Pencil Wash Storybook",
+      "tags": ["moral", "fabel", "tenang", "hewan", "pedesaan"],
+      "core_tokens": "Beatrix Potter-inspired watercolor pencil technique, soft visible pencil outlines filled with light color wash, adorable little cottage animals, timeless British countryside look."
+    },
+    {
+      "id": "style_062",
+      "name": "High-Contrast Cyber Noir Flat",
+      "tags": ["misteri", "malam", "kota", "aksi", "modern"],
+      "core_tokens": "Futuristic noir graphic novel style, pitch black shadows covering 70% of frame, single neon streetlamp slicing shadows, silhouette focuses, sharp vector cyberpunk feel."
+    },
+    {
+      "id": "style_063",
+      "name": "Ornate Byzantine Gold Mosaic",
+      "tags": ["kerajaan", "legenda", "magis", "klasik", "sejarah"],
+      "core_tokens": "Ancient Byzantine mosaic artwork style, thousands of tiny shimmering square gold leaf tiles, royal pixelated layouts, holy jewel tones, majestic museum piece quality."
+    },
+    {
+      "id": "style_064",
+      "name": "Cute 3D Pop-Up Book",
+      "tags": ["lucu", "ceria", "magis", "balita", "dongeng"],
+      "core_tokens": "Oversized 3D pop-up book layout, crisp paper fold creases, shadow casting cardboard stands, turning book page perspective, nostalgic interactive storybook charm."
+    },
+    {
+      "id": "style_065",
+      "name": "Whimsical Pastel Chalk Impressionist",
+      "tags": ["alam", "tenang", "peri", "putri", "magis"],
+      "core_tokens": "Dreamy chalk pastel paint layer blends, soft edge handling, magical meadow backgrounds, sparkling sun motes, airy glowing atmosphere with elegant romantic touches."
+    },
+    {
+      "id": "style_066",
+      "name": "Vintage 1950s UPA Cartoon Style",
+      "tags": ["komedi", "lucu", "sederhana", "fabel", "modern"],
+      "core_tokens": "1950s retro UPA animation style, asymmetrical character geometry, flat textureless color blocks, abstract minimalistic environments, witty cartoonish presentation."
+    },
+    {
+      "id": "style_067",
+      "name": "Traditional Chinese Silk Painting",
+      "tags": ["tenang", "alam", "sungai", "sejarah", "klasik"],
+      "core_tokens": "Classic Chinese fine brush (Gongbi) silk paint style, delicate ink lines, translucent tea-stained fabric canvas textures, majestic serene waterfalls and birds, timeless oriental vibe."
+    },
+    {
+      "id": "style_068",
+      "name": "Dark Fantasy Dark-Souls Oil",
+      "tags": ["seram", "raksasa", "kutukan", "pahlawan", "petualangan"],
+      "core_tokens": "Dark gothic fantasy oil paint style, gritty ashen environment textures, ruined colossal statues, fading embers light effects, solemn melancholic epic storytelling mood."
+    },
+    {
+      "id": "style_069",
+      "name": "Cute Kawaii Pastel Pixel Art",
+      "tags": ["game", "lucu", "ceria", "balita", "sederhana"],
+      "core_tokens": "Charming 16-bit cozy pixel art style, pastel color gradients, cute isometric grid items, sparkling retro stardust effects, soft retro gaming screen filter layout."
+    },
+    {
+      "id": "style_070",
+      "name": "Tribal Aboriginal Dot Painting",
+      "tags": ["daerah", "alam", "hewan", "legenda", "rakyat"],
+      "core_tokens": "Australian Aboriginal dreamtime dot painting inspiration, intricate rhythmic concentric patterns, rich warm earth clay colors, abstract mystical animal maps, native tribal art feel."
+    },
+    {
+      "id": "style_071",
+      "name": "French Comic Bandes Dessinées",
+      "tags": ["petualangan", "aksi", "sejarah", "pahlawan", "modern"],
+      "core_tokens": "Moebius-inspired French comic style, masterfully clean ink linework, muted flat watercolor gradients, vast breathtaking alien landscape views, surreal sci-fi fantasy masterpiece."
+    },
+    {
+      "id": "style_072",
+      "name": "Art Nouveau Watercolor Blend",
+      "tags": ["putri", "magis", "peri", "alam", "tenang"],
+      "core_tokens": "Art Nouveau curves integrated with watercolor bleeds, organic line framing layouts, soft golden hour lighting wash, dreamy intricate flower hair decoration."
+    },
+    {
+      "id": "style_073",
+      "name": "Cute 3D Fluffy Pastel Yarn",
+      "tags": ["lucu", "balita", "ceria", "hewan", "tenang"],
+      "core_tokens": "Adorable knitted yarn aesthetic, amigurumi toy proportions, looping wool stitch textures, soft pastel threads, cozy home craft studio background lighting."
+    },
+    {
+      "id": "style_074",
+      "name": "Traditional Japanese Sumi-e Splash",
+      "tags": ["aksi", "dramatis", "pahlawan", "misteri", "klasik"],
+      "core_tokens": "Dynamic sumi-e ink splash painting style, violent explosive brushstrokes, raw black ink dripping effects, high contrast white space composition, dramatic storytelling style."
+    },
+    {
+      "id": "style_075",
+      "name": "Retro 1960s Golden Book Vector",
+      "tags": ["moral", "fabel", "klasik", "hewan", "ceria"],
+      "core_tokens": "1960s Little Golden Book drawing aesthetic, textured crayon edges, cheerful stylized characters, retro family warm yellow tones, nostalgic storybook illustration look."
+    },
+    {
+      "id": "style_076",
+      "name": "Solarian Radiant Watercolor",
+      "tags": ["magis", "langit", "bintang", "sihir", "putri"],
+      "core_tokens": "Luminous ethereal watercolor art, bursts of pure golden sunlight paint effects, heavenly light leaks, crystalline shimmering stars, deeply emotional poetic atmosphere."
+    },
+    {
+      "id": "style_077",
+      "name": "Cyberpunk Neon Hologram Chibi",
+      "tags": ["lucu", "masa-depan", "modern", "ceria", "game"],
+      "core_tokens": "Adorable chibi characters inside a high-tech glowing futuristic neon setting, playful digital screen overlays, hyper glossy vinyl clothing textures, cheerful futuristic neon aesthetic."
+    },
+    {
+      "id": "style_078",
+      "name": "Vintage Victorian Silhouette Art",
+      "tags": ["misteri", "seram", "malam", "klasik", "dongeng"],
+      "core_tokens": "19th-century traditional papercut silhouette layout, pitch black character profiles, highly intricate lace framing, soft back-lit sepia paper parchment glow, antique timeless mystery."
+    },
+    {
+      "id": "style_079",
+      "name": "Cute Watercolor Splash Fabel",
+      "tags": ["lucu", "fabel", "hewan", "balita", "ceria"],
+      "core_tokens": "Splattered loose watercolor wash illustration style, friendly ink blot contours, accidental artistic bleeding drops, happy soft color scheme, adorable storybook animal expressions."
+    },
+    {
+      "id": "style_080",
+      "name": "Traditional Javanese Batik Tulis",
+      "tags": ["daerah", "rakyat", "legenda", "sejarah", "serius"],
+      "core_tokens": "Authentic Indonesian Javanese Batik Tulis pattern layout, wax-resist cracked lines, classic indigo blue and soga brown color tones, dense traditional parang cloud filigree motifs."
+    },
+    {
+      "id": "style_081",
+      "name": "Abstract Cubist Clay Diaroma",
+      "tags": ["aksi", "raksasa", "dramatis", "komedi", "modern"],
+      "core_tokens": "Blend of claymation stop-motion and abstract cubism geometry, geometric multi-angled hand-sculpted clay models, highly expressive sharp angular features, colorful experimental art."
+    },
+    {
+      "id": "style_082",
+      "name": "Whimsical Lofi Pastel Chalk",
+      "tags": ["tenang", "malam", "modern", "moral", "balita"],
+      "core_tokens": "Cozy lofi animation aesthetic, soft textured chalk shading, warm interior lamplight glow, slow floating dust motes, peaceful relaxed contemporary childhood tone."
+    },
+    {
+      "id": "style_083",
+      "name": "High-Fantasy Stained Glass Glow",
+      "tags": ["magis", "sihir", "kerajaan", "putri", "legenda"],
+      "core_tokens": "Luminous crystal mosaic panel layout, magical light beams piercing multi-colored translucent glass tiles, heroic fantasy configurations, majestic glowing art exhibition style."
+    },
+    {
+      "id": "style_084",
+      "name": "Cute Minimalist Flat Design",
+      "tags": ["sederhana", "moral", "hewan", "balita", "ceria"],
+      "core_tokens": "Ultra-clean minimalist flat vector art, zero gradients or outlines, basic geometric circles and squares forming cute character features, pastel background blocks, high visual clarity."
+    },
+    {
+      "id": "style_085",
+      "name": "Epic Mythological Renaissance",
+      "tags": ["pahlawan", "sejarah", "raksasa", "serius", "klasik"],
+      "core_tokens": "Michelangelo-inspired high Renaissance oil painting style, powerful muscular anatomical forms, dramatic heavenly storm cloud setups, volumetric divine light shafts, museum level depth."
+    },
+    {
+      "id": "style_086",
+      "name": "Vintage Woodblock Folklore Print",
+      "tags": ["rakyat", "legenda", "hutan", "hewan", "klasik"],
+      "core_tokens": "Old European folklore woodcut illustration style, raw hand-carved textures, rough black ink stamps, aged tan paper background, primitive historical fairy tale aesthetic."
+    },
+    {
+      "id": "style_087",
+      "name": "Cute 3D Rubber Duck Vinyl",
+      "tags": ["lucu", "balita", "ceria", "sungai", "lucu"],
+      "core_tokens": "Ultra-glossy cute yellow rubber toy finish, reflective water drop textures, highly rounded seamless model frames, vibrant summer pool colors, bright clean overhead studio light."
+    },
+    {
+      "id": "style_088",
+      "name": "Dark Romantic Chiaroscuro Ink",
+      "tags": ["misteri", "malam", "seram", "hutan", "sungai"],
+      "core_tokens": "Moody dark ink wash cross-hatching illustration, dramatic candlelight focal points surrounded by vast dense shadows, emotionally heavy character features, dark bedtime story vibe."
+    },
+    {
+      "id": "style_089",
+      "name": "Solarpunk Botanical Vector Flat",
+      "tags": ["modern", "alam", "masa-depan", "tenang", "kota"],
+      "core_tokens": "Bright optimistic solarpunk flat illustration, lush clean eco-friendly city integration, pure white clean curves, bright solar yellow and emerald garden tones, positive eco future layout."
+    },
+    {
+      "id": "style_090",
+      "name": "Traditional Indian Miniature Paint",
+      "tags": ["kerajaan", "sejarah", "klasik", "legenda", "putri"],
+      "core_tokens": "Mughal and Rajput traditional Indian miniature art style, incredibly flat perspective detailed patterns, miniature floral border frames, brilliant gold leaf pigment brush touches."
+    },
+    {
+      "id": "style_091",
+      "name": "Cute Chibi Claymation Fantasy",
+      "tags": ["lucu", "magis", "ceria", "balita", "fabel"],
+      "core_tokens": "Adorable hand-molded clay animation puppets, oversized cute clay eyes, fantasy wizard tiny costumes, magical clay particles floating, macro stop-motion camera style."
+    },
+    {
+      "id": "style_092",
+      "name": "Gothic Scratchy Pen Noir",
+      "tags": ["seram", "misteri", "kutukan", "malam", "hutan"],
+      "core_tokens": "Creepy high-contrast dark sketch style, messy scratchy charcoal lines, gaunt elongated character frames, deep midnight fog settings, Tim Burton style aesthetic."
+    },
+    {
+      "id": "style_093",
+      "name": "Whimsical Luminous Pastel Vector",
+      "tags": ["ceria", "peri", "magis", "balita", "lucu"],
+      "core_tokens": "Soft vector gradient child-friendly art style, glowing neon star outlines, smooth cream textures, candy-pink and lavender color palettes, magical modern children book vibe."
+    },
+    {
+      "id": "style_094",
+      "name": "Traditional Batak Toba Gorga Art",
+      "tags": ["daerah", "rakyat", "legenda", "pahlawan", "sejarah"],
+      "core_tokens": "Traditional North Sumatran Batak Gorga woodcarving design, intricate symmetrical red, black, and white wooden spiral engravings, majestic tribal cultural architecture look."
+    },
+    {
+      "id": "style_095",
+      "name": "Trendy 3D Isometric Playground",
+      "tags": ["modern", "game", "ceria", "kota", "lucu"],
+      "core_tokens": "Glossy colorful 3D isometric illustration, squishy rounded shapes, stylized futuristic toy town layout, pastel candy colors, soft global illumination digital render."
+    },
+    {
+      "id": "style_096",
+      "name": "Vintage 1920s Watercolor Wash",
+      "tags": ["klasik", "tenang", "alam", "hewan", "fabel"],
+      "core_tokens": "Classic early 20th-century storybook design, faded pastel watercolor washes, fine precise fountain pen borders, nostalgic gentle texturing, heartwarming antique fairy tale look."
+    },
+    {
+      "id": "style_097",
+      "name": "Abstract Geometric Mosaic Vector",
+      "tags": ["aksi", "modern", "dramatis", "pahlawan", "sederhana"],
+      "core_tokens": "Modern fractured geometric mosaic vector design, sharp low-poly layout lines, flat high-contrast contrasting blocks, high abstract emotional composition style."
+    },
+    {
+      "id": "style_098",
+      "name": "Bioluminescent Deep Sea Lofi",
+      "tags": ["laut", "tenang", "malam", "magis", "sihir"],
+      "core_tokens": "Moody deep underwater lofi background style, glowing neon coral reefs, floating dust light motes, deep turquoise and violet ambient shading, peaceful oceanic magic tone."
+    },
+    {
+      "id": "style_099",
+      "name": "Traditional Dayak Shield Pattern Art",
+      "tags": ["daerah", "rakyat", "legenda", "pahlawan", "hutan"],
+      "core_tokens": "Traditional Dayak shield wooden painting style, complex protective mask carvings, sharp geometric tribal swirls, antique wood canvas textures, raw cultural presentation."
+    },
+    {
+      "id": "style_100",
+      "name": "Luminous Storybook Grand Finale",
+      "tags": ["magis", "kerajaan", "bintang", "ceria", "putri"],
+      "core_tokens": "Spectacular epic storybook finale art layout, glorious golden sunburst particle sprays, characters smiling with tearful joy, rich colorful textures, pure cinematic happy ending atmosphere."
+    }
+  ]
+}

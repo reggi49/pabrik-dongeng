@@ -1,0 +1,12 @@
+{
+  "title": "Video Percobaan",
+  "audioNarrationUrl": "",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "video",
+      "assetUrl": "./public/test-assets/video1.mp4",
+      "durationInSeconds": 5
+    }
+  ]
+}

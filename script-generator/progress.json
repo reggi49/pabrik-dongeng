@@ -1,0 +1,75 @@
+{
+  "legenda_rawa_pening": {
+    "status": "done",
+    "attempts": 1,
+    "tokoh_utama": [
+      "Baru Klinting",
+      "Penyihir Jahat"
+    ],
+    "poin_wajib": [
+      "legenda",
+      "magis",
+      "kutukan"
+    ],
+    "selected_art_style": "Stained Glass Cathedral",
+    "error": null,
+    "timestamp": "2026-05-29T23:50:40.088941"
+  },
+  "roro_jonggrang": {
+    "status": "done",
+    "attempts": 1,
+    "tokoh_utama": [
+      "Roro Jonggrang",
+      "Bandung Bondowoso"
+    ],
+    "poin_wajib": [
+      "legenda",
+      "kerajaan",
+      "putri"
+    ],
+    "selected_art_style": "Medieval Illumination Manuscript",
+    "error": null,
+    "timestamp": "2026-05-30T11:08:01.939710"
+  },
+  "lutung_kasarung": {
+    "status": "done",
+    "attempts": 3,
+    "tokoh_utama": [
+      "lutung_kasarung",
+      "purbasari",
+      "sunan_ambu"
+    ],
+    "poin_wajib": [
+      "magis",
+      "kerajaan",
+      "hewan"
+    ],
+    "selected_art_style": "Whimsical Pastel Gouache",
+    "error": null,
+    "timestamp": "2026-05-30T11:13:01.001592"
+  },
+  "rawa_pening": {
+    "status": "done",
+    "attempts": 1,
+    "tokoh_utama": [
+      "Baru_Klinting",
+      "Penyihir_Jahat",
+      "Kepala_Desa"
+    ],
+    "poin_wajib": [
+      "legenda",
+      "magis",
+      "kutukan",
+      "rakyat",
+      "emosional",
+      "alam",
+      "sungai",
+      "klasik",
+      "pedesaan",
+      "fantasi"
+    ],
+    "selected_art_style": "Studio Ghibli Watercolor",
+    "error": null,
+    "timestamp": "2026-05-30T12:56:44.400516"
+  }
+}

@@ -1,0 +1,31 @@
+# --- Python (script-generator) ---
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.venv
+**/env/
+**/venv/
+**/env_dongeng/
+**/debug_logs/*.json
+**/debug_logs/*.txt
+**/output_generator/*.md
+**/output_generator/*.json
+**/output_generator/*.txt
+
+# --- Node/Next.js (video-generator) ---
+**/node_modules/
+**/.next/
+**/out/
+**/build/
+**/.env*
+**/*.log
+
+# --- Video Artifacts ---
+**/public/dongeng/*
+!**/public/dongeng/.gitkeep
+
+# --- OS / IDE ---
+.DS_Store
+.vscode/
+.idea/
+*.swp

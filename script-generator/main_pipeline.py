@@ -206,7 +206,7 @@ def validasi_kualitas_llm(fase, teks_hasil):
             metadata = meta_json.get("metadata", {})
             
             # Cek field wajib
-            required_keys = ["story_title", "character_sheets", "matched_visual_tags"]
+            required_keys = ["story_title", "character_sheets", "matched_visual_tags", "factual_plot_map"]
             for rk in required_keys:
                 if rk not in metadata:
                     return False, f"Struktur metadata tidak lengkap (komponen '{rk}' missing)"
@@ -287,8 +287,8 @@ def pencarian_fakta_brave_api(judul):
         "X-Subscription-Token": BRAVE_KEY
     }
     params = {
-        "q": f"cerita rakyat asli kisah legenda dongeng {judul} tokoh utama sinopsis alur asli",
-        "count": 3,
+        "q": f"cerita rakyat asli kisah legenda dongeng {judul} tokoh utama sinopsis alur asli urutan kejadian",
+        "count": 5,
         "extra_snippets": True
     }
     try:
@@ -297,14 +297,12 @@ def pencarian_fakta_brave_api(judul):
             search_data = response.json()
             konteks_fakta = ""
             for index, item in enumerate(search_data.get("web", {}).get("results", [])):
-                description = compact_text(item.get('description'), 400)
-                snippets = compact_text(' '.join(item.get('extra_snippets', [])), 800)
-                source_line = f"Sumber {index+1}: {description}"
-                if snippets:
-                    source_line += f" {snippets}"
-                konteks_fakta += f"\n{compact_text(source_line, MAX_BRAVE_CHARS_PER_RESULT)}\n"
+                description = compact_text(item.get('description'), 800)
+                snippets = compact_text(' '.join(item.get('extra_snippets', [])), 1000)
+                source_line = f"REFERENSI {index+1} (Source: {item.get('url')}):\nDescription: {description}\nDetails: {snippets}"
+                konteks_fakta += f"\n{source_line}\n---"
             konteks_fakta = konteks_fakta.strip()
-            log_status("SUCCESS", f"Data referensi internet untuk '{judul}' berhasil dikumpulkan dan dipadatkan ({len(konteks_fakta)} karakter).")
+            log_status("SUCCESS", f"Data referensi internet untuk '{judul}' berhasil dikumpulkan ({len(konteks_fakta)} karakter).")
             return konteks_fakta.strip()
         else:
             log_status("WARN", f"Brave Search mengembalikan HTTP {response.status_code}.")
@@ -350,13 +348,19 @@ YOUR TASK IN THIS PHASE:
 2. Choose a maximum of 10 visual tags from this pool: ["moral", "fabel", "hewan", "ceria", "modern", "kerajaan", "putri", "magis", "peri", "klasik", "mistis", "hantu", "sungai", "malam", "hutan", "rakyat", "pahlawan", "komedi", "legenda", "aksi", "raksasa", "kutukan", "petualangan", "alam", "pedesaan", "tenang", "emosional", "lucu", "balita", "sejarah", "serius", "kota", "misteri", "laut", "hitam-putih", "sederhana", "game", "daerah", "seram", "fantasi", "dramatis", "pulau"].
    - IMPORTANT: Sort these tags based on their priority and order of appearance in the story.
 3. Identify and generate detailed character design sheet prompts for up to 5 most important characters found in the research.
-4. Do NOT write the full story yet.
+4. Create a "Factual Plot Map" (Poin Alur Asli) which is a list of exactly 10 mandatory chronological events that MUST happen in the story to stay 100% faithful to the folklore.
+5. Do NOT write the full story yet.
 
 ===MULAI_JSON===
 {
   "metadata": {
     "story_title": "[Insert Clean Story Title Here]",
     "matched_visual_tags": ["tag_priority_1", "tag_priority_2", "...max_10_tags"],
+    "factual_plot_map": [
+        "1. [Mandatory Event 1]",
+        "2. [Mandatory Event 2]",
+        "...up_to_10_events"
+    ],
     "character_sheets": {
       "Character_Name_1": "Character design sheet layout of [Name], full body front view, back view, and a close-up portrait showing three expressive emotional states, pure solid white background, isolated on white, highly detailed turnaround",
       "Character_Name_2": "...",
@@ -662,7 +666,7 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                         "model": MIMO_MODEL, "messages": messages_fase1, "max_completion_tokens": 4096, "temperature": 0.45
                     }
                     
-                    res1 = post_mimo_with_debug("fase1_metadata", judul, current_attempt, headers, payload_fase1, timeout=180)
+                    res1 = post_mimo_with_debug("fase1_metadata", judul, current_total_attempts, headers, payload_fase1, timeout=180)
                     if res1.status_code == 429:
                         log_status("WARN", "Rate limited (429) pada Tembakan 1. Mengulang loop...")
                         time.sleep(20)
@@ -708,14 +712,14 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                     if output_fase_1_story is None:
                         log_status("INFO", "[TEMBAKAN 1B] Meminta Naskah Cerita Scene 1-20...")
                         messages_fase1b = [
-                            {"role": "system", "content": "You are Dongeng, a strict structured-output story writer. Use only the provided metadata artifact as your source."},
-                            {"role": "user", "content": f"{output_fase_1_meta}\n\n{PROMPT_FASE_1B_USER}"}
+                            {"role": "system", "content": "You are Dongeng, a strict structured-output story writer. Your story MUST align 100% with the provided RESEARCH FACTS and the FACTUAL PLOT MAP in the metadata. Do not contradict or omit any primary historical or legendary plot points."},
+                            {"role": "user", "content": f"REFERENSI FAKTA ASLI:\n{konteks_fakta}\n\nMETADATA:\n{output_fase_1_meta}\n\n{PROMPT_FASE_1B_USER}"}
                         ]
                         payload_fase1b = {
-                            "model": MIMO_MODEL, "messages": messages_fase1b, "max_completion_tokens": 8192, "temperature": 0.6
+                            "model": MIMO_MODEL, "messages": messages_fase1b, "max_completion_tokens": 8192, "temperature": 0.35
                         }
 
-                        res1b = post_mimo_with_debug("fase1b_cerita", judul, current_attempt, headers, payload_fase1b, timeout=550)
+                        res1b = post_mimo_with_debug("fase1b_cerita", judul, current_total_attempts, headers, payload_fase1b, timeout=550)
                         if res1b.status_code == 429:
                             log_status("WARN", "Rate limited (429) pada Tembakan 1B. Mengulang loop...")
                             time.sleep(20)
@@ -739,14 +743,14 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                     if output_fase_1_story_part_2 is None:
                         log_status("INFO", "[TEMBAKAN 1C] Meminta Naskah Cerita Scene 21-40...")
                         messages_fase1c = [
-                            {"role": "system", "content": "You are Dongeng, a strict structured-output story writer. Continue only from the provided metadata and Part 1 artifact."},
-                            {"role": "user", "content": f"{output_fase_1_meta}\n\n{output_fase_1_story}\n\n{PROMPT_FASE_1C_USER}"}
+                            {"role": "system", "content": "You are Dongeng, a strict structured-output story writer. Continue only using the provided RESEARCH FACTS, metadata, and Part 1 artifact. Maintain 100% consistency with the traditional resolution of the folklore."},
+                            {"role": "user", "content": f"REFERENSI FAKTA ASLI:\n{konteks_fakta}\n\nMETADATA:\n{output_fase_1_meta}\n\nPART 1:\n{output_fase_1_story}\n\n{PROMPT_FASE_1C_USER}"}
                         ]
                         payload_fase1c = {
-                            "model": MIMO_MODEL, "messages": messages_fase1c, "max_completion_tokens": 8192, "temperature": 0.6
+                            "model": MIMO_MODEL, "messages": messages_fase1c, "max_completion_tokens": 8192, "temperature": 0.35
                         }
 
-                        res1c = post_mimo_with_debug("fase1c_cerita", judul, current_attempt, headers, payload_fase1c, timeout=550)
+                        res1c = post_mimo_with_debug("fase1c_cerita", judul, current_total_attempts, headers, payload_fase1c, timeout=550)
                         if res1c.status_code == 429:
                             log_status("WARN", "Rate limited (429) pada Tembakan 1C. Mengulang loop...")
                             time.sleep(20)
@@ -803,7 +807,7 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                             "model": MIMO_MODEL, "messages": messages_fase2a, "max_completion_tokens": 8192, "temperature": 0.65
                         }
                         
-                        res2a = post_mimo_with_debug("fase2a_image_prompts", judul, current_attempt, headers, payload_fase2a, timeout=550)
+                        res2a = post_mimo_with_debug("fase2a_image_prompts", judul, current_total_attempts, headers, payload_fase2a, timeout=550)
                         if res2a.status_code != 200:
                             raise ConnectionError(f"HTTP Error {res2a.status_code} pada Tembakan 2A: {res2a.text}")
                         if 'choices' not in res2a.json():
@@ -826,7 +830,7 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                             "model": MIMO_MODEL, "messages": messages_fase2b, "max_completion_tokens": 8192, "temperature": 0.65
                         }
                         
-                        res2b = post_mimo_with_debug("fase2b_image_prompts", judul, current_attempt, headers, payload_fase2b, timeout=550)
+                        res2b = post_mimo_with_debug("fase2b_image_prompts", judul, current_total_attempts, headers, payload_fase2b, timeout=550)
                         if res2b.status_code != 200:
                             raise ConnectionError(f"HTTP Error {res2b.status_code} pada Tembakan 2B: {res2b.text}")
                         if 'choices' not in res2b.json():
@@ -864,7 +868,7 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                         payload_fase3a = {
                             "model": MIMO_MODEL, "messages": messages_fase3a, "max_completion_tokens": 8192, "temperature": 0.5
                         }
-                        res3a = post_mimo_with_debug("fase3a_video_prompts", judul, current_attempt, headers, payload_fase3a, timeout=550)
+                        res3a = post_mimo_with_debug("fase3a_video_prompts", judul, current_total_attempts, headers, payload_fase3a, timeout=550)
                         if res3a.status_code != 200:
                             raise ConnectionError(f"HTTP Error {res3a.status_code} pada Tembakan 3A: {res3a.text}")
                         output_fase_3a = res3a.json()['choices'][0]['message']['content'].strip()
@@ -884,7 +888,7 @@ def jalankan_pipeline_utama(input_queue_file="daftar_dongeng.json"):
                         payload_fase3b = {
                             "model": MIMO_MODEL, "messages": messages_fase3b, "max_completion_tokens": 8192, "temperature": 0.5
                         }
-                        res3b = post_mimo_with_debug("fase3b_video_prompts", judul, current_attempt, headers, payload_fase3b, timeout=550)
+                        res3b = post_mimo_with_debug("fase3b_video_prompts", judul, current_total_attempts, headers, payload_fase3b, timeout=550)
                         if res3b.status_code != 200:
                             raise ConnectionError(f"HTTP Error {res3b.status_code} pada Tembakan 3B: {res3b.text}")
                         output_fase_3b = res3b.json()['choices'][0]['message']['content'].strip()
